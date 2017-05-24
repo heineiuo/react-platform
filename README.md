@@ -10,7 +10,7 @@ yarn add react-platform-js # or npm install react-platform-js
 
 ### method
 ```javascript
-import Platform from 'react-platform-js
+import Platform from 'react-platform-js'
 
 Platform.OS // OS name, Mac OS
 Platform.OSVersion // OS version, 10.11
