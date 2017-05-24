@@ -44,7 +44,9 @@ class Platform extends Component {
   static UA = UA
 
   static defaultProps = {
-    rules: {}
+    rules: {},
+    className: '',
+    style: {}
   }
 
   static select = (selectMap) => {
@@ -54,10 +56,11 @@ class Platform extends Component {
   }
 
   render () {
-    const {children, rules} = this.props
+    const {children, rules, className, style} = this.props
     if (typeof children === 'function') return children(props)
     const illegal = Object.keys(rules).find(key => props[key] !== rules[key])
     if (illegal) return null;
+    if (typeof children === 'string' || children instanceof Array) return React.createElement('div', {className, style}, children);
     return React.cloneElement(children)
   }
 }
