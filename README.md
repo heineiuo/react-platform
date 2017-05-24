@@ -71,14 +71,14 @@ class App2 extends Component {
     )
   }
 }
+```
+
 
 #### props
 
 * *rules*
 * *className* only work when children is string or array
 * *style* only work when children is string or array
-
-```
 
 ## License
 
