@@ -1,0 +1,23 @@
+{
+  "name": "react-platform-js",
+  "version": "0.0.1",
+  "description": "<Platform> for browser",
+  "main": "lib/index.js",
+  "scripts": {
+    "build": "babel ./src -d ./lib",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "@heineiuo",
+  "license": "MIT",
+  "devDependencies": {
+    "babel-plugin-transform-class-properties": "^6.24.1",
+    "babel-preset-es2015": "^6.24.1",
+    "babel-preset-react": "^6.24.1",
+    "babel-preset-stage-0": "^6.24.1",
+    "react": "^15.4.1",
+    "react-dom": "^15.4.1"
+  },
+  "dependencies": {
+    "ua-parser-js": "^0.7.12"
+  }
+}

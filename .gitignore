@@ -1,0 +1,12 @@
+.idea
+.DS_Store
+*.log*
+Thumb.db
+node_modules
+
+# packages
+package/*/lib
+packages/react-sea
+!packages/react-sea/package.json
+!packages/react-sea/README.md
+!packages/react-sea/bin
