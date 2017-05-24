@@ -42,10 +42,14 @@ class App extends Component {
   }
 }
 
+/**
+ * use function children
+ * *important* in this way, prop 'rules' will not work
+ */
 class App2 extends Component {
   render() {
     return (
-      <Platform rules={{OS: 'Mac OS'}}>
+      <Platform>
         {props => {
           return (
             <div>
@@ -67,6 +71,12 @@ class App2 extends Component {
     )
   }
 }
+
+#### props
+
+* *rules*
+* *className* only work when children is string or array
+* *style* only work when children is string or array
 
 ```
 
