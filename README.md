@@ -1,16 +1,16 @@
-# react-platform-js
+# @react-shared/platform
 
 ## Install
 
 ```bash
-yarn add react-platform-js # or npm install react-platform-js
+yarn add @react-shared/platform # or npm install @react-shared/platform
 ```
 
 ## Usage
 
 ### method
 ```javascript
-import Platform from 'react-platform-js'
+import Platform from '@react-shared/platform'
 
 Platform.OS // OS name, Mac OS
 Platform.OSVersion // OS version, 10.11
@@ -30,7 +30,7 @@ Platform.UA
 
 ```javascript
 import React, {Component} from 'react'
-import Platform from 'react-platform-js'
+import Platform from '@react-shared/platform'
 
 class App extends Component {
   render() {
